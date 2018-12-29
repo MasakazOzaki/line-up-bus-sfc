@@ -1,0 +1,125 @@
+*{
+    
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/sfc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    vertical-align: middle;
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+@-webkit-keyframes fadeIn {
+     0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+a{
+    text-align: center;
+    display: block;
+    margin: 16px auto;
+    width: 40%;
+    color: #fff;
+    text-decoration: none;
+    border: 4px solid #fff;
+    padding: 8px 0;
+    background: rgba(255,255,255,0);
+    border-radius: 25px;
+    transition-duration: 0.5s;
+    font-size: 40px;
+}
+  
+a:hover{
+    background: #fff;
+    color: #000;
+}
+
+p{
+    font-weight: bold;
+    font-size: 40px;
+    padding: 5px;
+    text-align: left;
+}
+h4{
+    font-weight: bold;
+    font-size: 40px;
+    padding: 5px;
+    text-align: center;
+    padding: 15px;
+}
+.section{
+    float: left;
+    width:20%;
+      border-left: 1px solid #fff;
+}
+
+.box2{
+	margin: auto;
+	width:90%;
+	height:200px;
+	top:0;
+	right:0;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+}
+
+h1{
+    margin: auto;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+
+form{
+    width:100%;
+    display: inline-flex;
+}
+
+input{
+    text-aligin: center;
+    display: block;
+    margin: 16px auto;
+    width: 95%;
+    color: #fff;
+    text-decoration: none;
+    border: 4px solid #fff;
+    padding: 8px 0;
+    font-size: large;
+    background: rgba(255,255,255,0);
+    border-radius: 25px;
+    transition-duration: 0.5s;
+}
+
+input:hover{
+    background: #fff;
+    color: #000;
+}
+
+input[value="+"]{
+    
+}
+
+input[value="-"]{
+    color: #f9f9f9;
+    background: #F44336;
+}
+

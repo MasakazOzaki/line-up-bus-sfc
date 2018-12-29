@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/shounandai.css">
+</head>
+<body>
+  <h1>バス列は今？(湘南台駅西口)</h1>
+  <div>
+    <a href="/">慶応大学本館前のバス列はこちら</a>
+    <h4>今並ぶとバスを<%= @sline %>本見送ることになります</h4>
+    <hr width="60%" noshade>
+    <p>現在のバス列の長さは・・・</p>
+    <div class="box2">
+       <div class="section">
+      <form action="/shonandai/plus1" method="GET">
+        <input type="submit" value="ほとんど並んでいない。">
+      </form>
+      <p style="font-size:<%= @scount1 * 5 + 30 %>px;"><%= @scount1 %></p>
+    </div>
+    <div class="section">
+      <form action="/shonandai/plus2" method="GET">
+        <input type="submit" value="ニッポンレンタカーのとこぐらい">
+      </form>
+      <p style="font-size:<%= @scount2 * 5 + 30 %>px;"><%= @scount2 %></p>
+    </div>
+    <div class="section">
+      <form action="/shonandai/plus3" method="GET">
+        <input type="submit" value="階段は降りていないぐらい">
+      </form>
+      <p style="font-size:<%= @scount3*5+30 %>px;"><%= @scount3 %></p>
+    </div>
+    <div class="section">
+      <form action="/shonandai/plus4" method="GET">
+        <input type="submit" value="階段の下。地下。">
+      </form>
+      <p style="font-size:<%= @scount4*5+30 %>px;"><%= @scount4 %></p>
+    </div>
+    <div class="section">
+      <form action="/shonandai/plus5" method="GET">
+        <input type="submit" value="相鉄の改札前。もう自主全休。">
+      </form>
+      <p style="font-size:<%= @scount5*5+30 %>px;"><%= @scount5 %></p>
+    </div>
+    </div>
+  </div>

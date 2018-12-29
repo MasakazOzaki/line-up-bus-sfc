@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/count.css">
+</head>
+<body>
+    <h1>バス列は今？(慶応大学本館前)</h1>
+  <div>
+    <a href="/shonandai">湘南台駅のバス列はこちら</a>
+    <h4>今並ぶとバスを<%= @line %>本見送ることになります</h4>
+     <hr width="60%" noshade>
+    <p>現在のバス列の長さは・・・</p>
+    <div class="box2">
+       <div class="section">
+      <form action="/plus1" method="GET">
+        <input type="submit" value="ほぼ並んでいない。">
+      </form>
+      <p style="font-size:<%= @count1 * 5 + 30 %>px;"><%= @count1 %></p>
+    </div>
+    <div class="section">
+      <form action="/plus2" method="GET">
+        <input type="submit" value="50mぐらい">
+      </form>
+      <p style="font-size:<%= @count2 * 5 + 30 %>px;"><%= @count2 %></p>
+    </div>
+    <div class="section">
+      <form action="/plus3" method="GET">
+        <input type="submit" value="100mぐらい">
+      </form>
+      <p style="font-size:<%= @count3 * 5 + 30 %>px;"><%= @count3 %></p>
+    </div>
+    <div class="section">
+      <form action="/plus4" method="GET">
+        <input type="submit" value="200mぐらい">
+      </form>
+      <p style="font-size:<%= @count4 * 5 + 30 %>px;"><%= @count4 %></p>
+    </div>
+    <div class="section">
+      <form action="/plus5" method="GET">
+        <input type="submit" value="もうこれは歩いて帰る。">
+      </form>
+      <p style="font-size:<%= @count5 * 5 + 30 %>px;"><%= @count5 %></p>
+    </div>
+    </div>
+  </div>
+  
